@@ -11,7 +11,6 @@ import java.util.List;
 
 @Repository
 public class UserDaoImp implements UserDao {
-
     private final static String HQL_GET_USER_BY_CAR = "FROM User as user " +
             "INNER JOIN FETCH user.car as userCar " +
             "WHERE userCar.model=:carModel AND userCar.series=:carSeries";

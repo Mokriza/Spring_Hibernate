@@ -16,6 +16,7 @@ public class CarDaoImp implements CarDao {
 
     @Autowired
     private SessionFactory sessionFactory;
+
     @Override
     public void addCar(Car car) {
         sessionFactory.getCurrentSession().save(car);
