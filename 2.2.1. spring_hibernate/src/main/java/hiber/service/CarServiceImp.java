@@ -27,5 +27,4 @@ public class CarServiceImp implements CarService {
     public List<Car> getCarsList() {
         return carDao.getCarsList();
     }
-
 }
